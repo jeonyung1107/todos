@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TodoTemplate from './components/TodoTemplate'
+import TodoInsert from './components/TodoInsert'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World!!</h1>
-    </div>
-  );
+    <TodoTemplate>
+      <TodoInsert/>
+    </TodoTemplate>
+  )
 }
 
 export default App;
